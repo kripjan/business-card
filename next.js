@@ -1,16 +1,12 @@
-document.querySelectorAll('.next-but').forEach(button => {
-    button.addEventListener('click', function(event) {
-      event.preventDefault();  // Prevent default button behavior
-  
-      // Add the slide-out animation to the body
-      document.body.classList.add('slide-out');
-  
-      // Get the target URL from the button's parent anchor tag
-      const targetUrl = this.parentElement.getAttribute('href');
-  
-      // Redirect to the next page after the animation
-      setTimeout(function() {
-        window.location.href = targetUrl;
-      }, 500);  // Match the animation duration in milliseconds
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  const nextButton = document.querySelector(".next-but"); // Button to navigate to the next page
+  const currentPage = document.body; // Current page's body
+
+  nextButton.addEventListener("click", (event) => {
+      event.preventDefault(); // Prevent default link behavior
+      currentPage.classList.add("slide-out"); // Add slide-out class
+      setTimeout(() => {
+          window.location.href = nextButton.parentElement.href; // Navigate to the next page after the animation
+      }, 500); // Match the duration of the CSS transition
   });
+});
