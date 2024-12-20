@@ -116,6 +116,7 @@
 .bottomright {
     
     margin-top: 30px;
+    padding-top: 19px;
         
 }
 .info p {
@@ -168,7 +169,7 @@
 }
 
 .QR-img {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     width:350px;
     /* border: 2px solid #511212; */
 }

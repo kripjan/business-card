@@ -1,25 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     height: 100vh;
     background-color: #ffffff;
 }
 
+.container {
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden; 
+}
+
+.pages {
+    display: flex;
+    width: 200dvw;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 100dvw;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+.one, .two {
+    width: 100dvw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    overflow: hidden;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+}
+
 .card {
+    padding: 20px;
     display: flex;
     justify-content: space-evenly;
-    width: 90dvw;
-    height: 90dvh;
-    padding: 20px;
+    min-height: 90dvh;
+    min-width: 90dvw;
 }
 
 .left {
+    padding-top:10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -34,67 +78,33 @@ body {
     flex-direction: column;
     text-decoration: none;
 }
-.a {
+
+.a, .b, .c, .d {
     margin-top: 15px;
 }
-.b {
-    margin-top: 15px;
-}
-.c {
-    margin-top: 15px;
-}
-.d {
-    margin-top: 15px;
-}
-.a p{
+
+.a p, .b p, .c p, .d p {
     margin: 0;
 }
-.b p{
-    margin: 0;
-}
-.c p{
-    margin: 0;
-}
-.d p{
-    margin: 0;
-}
+
 .namee {
     font-size: 27px;
     font-weight: bold;
     color: #1A3559;
-    
 }
 
 .post {
     font-size: 20px;
     font-weight: bold;
     color: #1A3559;
-    
+    padding-bottom: 2px;
 }
 
 .QR-img {
-    padding: 0;
+    
     width: 330px;
     height: auto;
-}
-
-.right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: right;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    width: 400px;
-}
-
-.logo-img {
-    width: 100%;
-    height: auto;
+    margin-bottom: 20px;
 }
 
 .info {
@@ -117,13 +127,49 @@ body {
     text-decoration: none;
     color: #1A3559;
     display: flex;
-    align-items:center;
+    align-items: center;
     margin-left: 0;
 }
 
 .factory {
     padding-left: 40px;
     font-size: 16px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: right;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+}
+
+.logo-img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    font-family: Baskervville, sans-serif;
+    padding-right: 20px;
+}
+
+.title p {
+    font-size: 35px;
+    color: #1A3559;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.logotwo {
+    max-width: 50dvw;
+    height: auto;
 }
 
 .button {
@@ -136,17 +182,11 @@ body {
     bottom: 5%;
 }
 
-.next-but {
-    min-width: 40px; 
-    min-height: 20px;
-    font-size: 18px; 
-}
-
-@media(max-width:860px)
-{
-    .body{
+@media (max-width: 860px) {
+    body {
         overflow: hidden;
     }
+
     .card {
         flex-direction: column;
         min-height: auto;
@@ -164,16 +204,15 @@ body {
         text-align: center; 
     }
 
-    .right{
+    .right {
         margin-top: -80px;
     }
 
-    .logo-img, .QR-img 
-    {
+    .logo-img, .QR-img {
         width: 150px; 
     }
 
-    .logo-img{
+    .logo-img {
         padding-bottom: 5px;
     }
 
@@ -181,27 +220,27 @@ body {
         padding-top: 10px;
     }
 
-    .namee{
-        font-size: 10px;;
+    .namee {
+        font-size: 10px;
     }
-    .post{
+
+    .post {
         font-size: 5px;
     }
 
-
-    .info p{
+    .info p {
         display: flex;
         justify-content: center;
         text-align: center;
         font-size: 10px;
     }
 
-    .info i{
-        font-size:10px;
+    .info i {
+        font-size: 10px;
         text-align: center;
     }
 
-    .factory{
+    .factory {
         padding-left: 17px;
     }
 
@@ -212,9 +251,5 @@ body {
         bottom: 5%;
     }
 
-    .next-but {
-        min-width: 10px; 
-        min-height: 10px;
-        font-size: 18px; 
-    }
+    
 }
