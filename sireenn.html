@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sliding Pages</title>
+</head>
+<body>
+    <div class="container">
+        <div class="pages">
+        <!-- Page 1 -->
+        <div class="page one" >
+            <div class="whole">
+                <div class="card">
+                    <div class="left">
+                        <div class="logo">
+                            <img src="logo-white english v3.png" alt="logo" class="logo-img" id="logo-img">
+                        </div>
+                        <div class="QR">
+                            <img src="Sireen Tamrakar_SVJ_VC_v3.0.png" alt="QR" class="QR-img" id="QR-img">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="title">
+                            <h2>SIREEN TAMRAKAR</h2>
+                            <p>Jewelry Designer</p>
+                        </div>
+                        <div class="bottomright">
+                            <div class="info">
+                                <p><a href="https://maps.app.goo.gl/jjuKD9yicyCnE6wr8"  target="_blank"><i class='bx bxs-map' ></i>&nbsp144 New Road, Kathmandu, Nepal</a></p>
+                                <p><a href="tel:+977-9851165844" target="_blank"><i class='bx bx-mobile' ></i>&nbsp+977-9851165844</a></p>
+   
+                                
+                                <p style="display: flex; align-items: center;">
+                                   <i class='bx bxs-phone-call'></i>
+                                   <a href="tel:+977-15368475" target="_blank" >&nbsp&nbsp+977-15368475</a>,
+                                   <a href="tel:+977-15338266" target="_blank" >&nbsp+977-15338266</a>, 
+                                   <a href="tel:+977-9861844742" target="_blank" >&nbsp+977-9861844742</a>
+                               </p>
+                                <p class="factory"><a href="tel:+977-14525826" target="_blank">&nbsp Factory: +977-14525826</a></p>
+                                <p><a href="mailto:shreevairabjewelry@gmail.com" target="_blank"><i class='bx bxs-envelope' ></i></i>&nbsp shreevairabjewelry@gmail.com</a></p>
+                                <p><a href="https://www.facebook.com/shreevairabjewelry/" target="_blank"><i class='bx bxl-facebook-square' ></i>&nbsp /shreevairabjewelry</a></p>   
+                                <p><a href="https://www.instagram.com/shreevairabjewelry/" target="_blank"><i class='bx bxl-instagram-alt' ></i>&nbsp /shreevairabjewelry</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button onclick="slide('next')"><i class='bx bx-right-arrow-alt'></i></button>
+            </div>
+        </div>
+
+            <!-- Page 2 -->
+            <div class="page two" >
+                <img src="logo-white english v3.png" alt="logo" class="logotwo">
+                <div >
+                    <button onclick="slide('prev')"><i class='bx bx-left-arrow-alt'></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
