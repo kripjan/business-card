@@ -10,7 +10,13 @@
 <body>
     <div class="container">
         <div class="pages">
-        <!-- Page 1 -->
+        
+
+            <!-- Page 2 -->
+            <div class="page two" >
+                <img src="logo-white english v3.png" alt="logo" class="logotwo">
+            </div>   
+                <!-- Page 1 -->
         <div class="page one" >
             <div class="whole">
                 <div class="card">
@@ -25,14 +31,12 @@
                     <div class="right">
                         <div class="title">
                             <h2>SIREEN TAMRAKAR</h2>
-                            <p>Jewelry Designer</p>
+                            <p><span class="bold">J</span>ewelry <span class="bold">D</span>esigner</p>
                         </div>
                         <div class="bottomright">
                             <div class="info">
-                                <p><a href="https://maps.app.goo.gl/jjuKD9yicyCnE6wr8"  target="_blank"><i class='bx bxs-map' ></i>&nbsp144 New Road, Kathmandu, Nepal</a></p>
-                                <p><a href="tel:+977-9851165844" target="_blank"><i class='bx bx-mobile' ></i>&nbsp+977-9851165844</a></p>
-   
-                                
+                                <p><a href="https://maps.app.goo.gl/jjuKD9yicyCnE6wr8"  target="_blank"><i class='bx bxs-map' ></i>&nbsp&nbsp144 New Road, Kathmandu, Nepal</a></p>
+                                <p><a href="tel:+977-9851165844" target="_blank"><i class='bx bx-mobile' ></i>&nbsp&nbsp+977-9851165844</a></p>
                                 <p style="display: flex; align-items: center;">
                                    <i class='bx bxs-phone-call'></i>
                                    <a href="tel:+977-15368475" target="_blank" >&nbsp&nbsp+977-15368475</a>,
@@ -48,21 +52,23 @@
                     </div>
                 </div>
             </div>
-            <div class ="button">
-                <button onclick="slide('next')"><i class='bx bx-right-arrow-alt'></i></button>
             </div>
         </div>
-
-            <!-- Page 2 -->
-            <div class="page two" >
-                <img src="logo-white english v3.png" alt="logo" class="logotwo">
-                <div >
-                    <button onclick="slide('prev')"><i class='bx bx-left-arrow-alt'></i></button>
-                </div>
+        <div class="button_container">
+            <div class="buttons">
+                <button id="prev" style="visibility: hidden;">
+                    <i><</i>
+                </button>
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                </ul>
+                <button id="next" style="visibility: visible;">
+                    <i>></i>
+                </button>
             </div>
         </div>
     </div>
-
     <script src="sireenn.js"></script>
 </body>
 </html>

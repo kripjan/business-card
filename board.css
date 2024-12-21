@@ -27,6 +27,7 @@ body {
     width: 200dvw;
     height: 100%;
     box-sizing: border-box;
+    transition: transform 0.5s ease;
 }
 
 .page {
@@ -158,21 +159,86 @@ body {
 }
 
 
+.container .button_container {
+  position: absolute;
+  bottom: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+}
 
-.logotwo {
-    max-width: 50dvw;
+.container .button_container .buttons {
+  display: flex;
+  align-items: center;
+}
+.container .pages .item:nth-child(1) {
+    width: 100dvw;
+    align-self: center;
+}
+
+  .container .dots li {
+    background-color: var(--dots-color);
+
+  }
+  
+  .container .buttons button {
+    background-color: var(--container-button-color);
+    color: var(--text-color);
+  }
+.container .buttons button {
+  background-color: var(--container-button-color);
+  border: none;
+  font-size: 2.5rem;
+  padding-top: 0.15rem;
+  height: fit-content;
+  align-self: center;
+  font-weight: bold;
+  transition: transform 0.3s;
+
+  cursor: pointer;
+}
+
+button i{
+    padding: 5px;
+}
+.container .buttons button:hover {
+  transform: scale(1.3);
+}
+
+.container .dots {
+  /* color: var(--dots-w); */
+  display: flex;
+  width: 100%;
+}
+
+.container .dots li {
+  list-style: none;
+  width: 0.9rem;
+  height: 0.9rem;
+  color: var(--dots);
+  margin: 0.4rem;
+  border-radius: 0.9rem;
+  transition: 0.5s;
+}
+
+.container .dots li.active {
+  width: 3rem;
+}
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #1A3559;
+    --dots-color: #1A3559;
+    --link-color: #1A3559;
+    --container-button-color: rgba(0, 0, 0, 0);
+  }
+
+  .logotwo {
+    max-width: 45dvw;
     height: auto;
 }
 
-.button {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin-top: 30px; 
-    position: absolute;
-    right: 50%;
-    bottom: 5%;
-}
 
 @media (max-width: 860px) {
     body {
@@ -235,13 +301,11 @@ body {
     .factory {
         padding-left: 17px;
     }
-
+    
     .button {
         margin-top: 30px; 
         position: absolute;
         right: 45%;
         bottom: 5%;
-    }
-
-    
+    }    
 }
