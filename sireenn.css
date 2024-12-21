@@ -260,13 +260,15 @@
 @media (max-width: 860px) {
     body {
         overflow: hidden;
+        margin-left: -20px;
     }
 
     .card {
+        display:flex;
         flex-direction: column;
         min-height: auto;
         width: 100%;
-        padding: 10px;
+        padding: px;
         margin: 0;
     }
 
