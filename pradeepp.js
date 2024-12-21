@@ -50,54 +50,30 @@ document.addEventListener('keydown', (event) => {
         }
     }
 });
+// Swipe functionality for mobile devices
+pages.addEventListener('touchstart', (event) => {
+  touchStartX = event.touches[0].clientX; // Record starting touch position
+});
 
+pages.addEventListener('touchmove', (event) => {
+  touchEndX = event.touches[0].clientX; // Update ending touch position
+});
+
+pages.addEventListener('touchend', () => {
+  if (touchEndX - touchStartX > 50) {
+      // Swipe right: go to the previous page
+      if (currentPageIndex > 0) {
+          currentPageIndex--;
+          updatePageVisibility();
+      }
+  } else if (touchStartX - touchEndX > 50) {
+      // Swipe left: go to the next page
+      if (currentPageIndex < pageElements.length - 1) {
+          currentPageIndex++;
+          updatePageVisibility();
+      }
+  }
+});
 updatePageVisibility();
 
 
-// Swipe events for mobile
-slider.addEventListener("touchstart", handleTouchStart, false);
-slider.addEventListener("touchend", handleTouchEnd, false);
-
-function reloadcontainer() {
-    slider.style.left = -items[active].offsetLeft + "px";
-    let last_active_dot = document.querySelector(".slider .dots li.active");
-    last_active_dot.classList.remove("active");
-    dots[active].classList.add("active");
-  }
-
-function handleTouchStart(event) {
-  touchStartX = event.changedTouches[0].screenX;
-  touchStartY = event.changedTouches[0].screenY;
-}
-
-function handleTouchEnd(event) {
-  touchEndX = event.changedTouches[0].screenX;
-  touchEndY = event.changedTouches[0].screenY;
-  handleGesture();
-}
-
-function handleGesture() {
-  let deltaX = touchEndX - touchStartX;
-  let deltaY = touchEndY - touchStartY;
-
-  if (Math.abs(deltaX) > Math.abs(deltaY)) {
-    // Ensure it's a horizontal swipe
-    if (deltaX < -75) {
-      // Swipe left
-      if (active + 1 <= lengthItems) {
-        active++;
-        reloadcontainer();
-        prev.disabled = false;
-        updateButtonVisibility();
-      }
-    } else if (deltaX > 75) {
-      // Swipe right
-      if (active - 1 >= 0) {
-        active--;
-        reloadcontainer();
-        next.disabled = false;
-        updateButtonVisibility();
-      }
-    }
-  }
-}

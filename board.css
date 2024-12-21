@@ -243,6 +243,7 @@ button i{
 @media (max-width: 860px) {
     body {
         overflow: hidden;
+        margin-top:-40px;
     }
 
     .card {
