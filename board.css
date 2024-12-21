@@ -72,6 +72,7 @@ body {
 
 .all {
     padding-left: 15px;
+    padding-bottom:30px;
     font-family: Baskervville, sans-serif;
     display: flex;
     justify-content: center;
@@ -137,6 +138,7 @@ body {
 }
 
 .right {
+    margin-left: 10px;;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,17 +157,7 @@ body {
     height: auto;
 }
 
-.title {
-    font-family: Baskervville, sans-serif;
-    padding-right: 20px;
-}
 
-.title p {
-    font-size: 35px;
-    color: #1A3559;
-    margin-top: 5px;
-    text-align: right;
-}
 
 .logotwo {
     max-width: 50dvw;
