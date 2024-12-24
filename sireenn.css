@@ -252,7 +252,7 @@
 
 
 .logotwo{
-    max-width: 50dvw;
+    width: 50dvw;
     height: auto;
 }
 
@@ -291,7 +291,8 @@
     }
 
     .logotwo{
-        width: 90%;
+        
+        width: 90dvw;
     }
 
     .title h2 {
