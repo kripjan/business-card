@@ -256,6 +256,9 @@
     height: auto;
 }
 
+.whole{
+    height:100dvh;
+}
 
 @media (max-width: 965px) {
     body {
