@@ -64,14 +64,16 @@
 }
 
 .logo-img {
-    width: 19rem;
+    
+    height: 30dvh;
     margin-bottom: 20px;
     /* border: 2px solid #24c7d6; */
 }
 
 .QR-img {
     margin-bottom: 20px;
-    width:19rem;
+    /* width:30dvw; */
+    height: 43dvh;
     /* border: 2px solid #511212; */
 }
 
@@ -305,7 +307,7 @@
     }
 
     .title p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-align: center;
         padding-left: 25px;
     }
@@ -315,7 +317,7 @@
     }
 
     .info p {
-        font-size: 1rem;
+        font-size: .8rem;
         text-align: center;
         margin: 5px 0;
     }
@@ -334,7 +336,7 @@
 
     .info i {
         margin-right: 0rem;
-        font-size: 20px;
+        font-size: .8rem;
     }
 
     .button {
