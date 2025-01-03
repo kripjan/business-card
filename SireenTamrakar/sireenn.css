@@ -64,14 +64,14 @@
 }
 
 .logo-img {
-    width: 350px;
+    width: 19rem;
     margin-bottom: 20px;
     /* border: 2px solid #24c7d6; */
 }
 
 .QR-img {
     margin-bottom: 20px;
-    width:380px;
+    width:19rem;
     /* border: 2px solid #511212; */
 }
 
@@ -93,7 +93,7 @@
 }
 
 .title h2 {
-    font-size: 50px;
+    font-size: 2.5rem;
     margin: 0;
     color: #1A3559;
     font-weight: 600;
@@ -103,7 +103,7 @@
 }
 
 .title p {
-    font-size: 42px;
+    font-size: 2rem;
     color: #1A3559;
     margin-top: 5px;
     text-align: right;
@@ -118,7 +118,7 @@
         
 }
 .info p {
-    font-size: 30px;
+    font-size: 1.5rem;
     color: #1A3559;
     margin: 8px 0;
     /* border: 5px solid gold; */
@@ -140,7 +140,7 @@
 }
 
 .info i {
-    font-size: 30px;
+    font-size: 1.5rem;
     margin-right: 10px;
     color: #1A3559;
     /* border: 5px solid #1283ac; */
@@ -148,7 +148,7 @@
 }
 
 .info .link i {
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-right: 15px;
 }
 .left {
@@ -253,53 +253,7 @@
 }
 
 
-@media (min-width: 965px) and (max-width: 1200px)
- {
-    .QR-img {
-        margin-bottom: 20px;
-        width:320px;
-    }
-
-    
-    .title h2 {
-        font-size: 40px;
-        margin: 0;
-        color: #1A3559;
-        font-weight: 600;
-        text-align: right;
-        /* border: 5px solid #d624bb; */
-        text-wrap:nowrap;
-    }
-
-    .title p {
-        font-size: 35px;
-        color: #1A3559;
-        margin-top: 5px;
-        text-align: right;
-        /* border: 5px solid #1c2855; */
-}
-.info p {
-    font-size: 22px;
-    color: #1A3559;
-    margin: 8px 0;
-    /* border: 5px solid gold; */
-
-}
-.info i {
-    font-size: 25px;
-    margin-right: 10px;
-    color: #1A3559;
-    /* border: 5px solid #1283ac; */
-    
-}
-
-.info .link i {
-    font-size: 15px;
-    margin-right: 15px;
-}
-  }
-  
-@media (max-width: 965px) {
+@media (max-width: 800px) {
     
     .nbsp {
         display: none;
@@ -308,7 +262,7 @@
     body {
         overflow: hidden;
         padding: 0;
-        /* margin-top:-30px; */
+       
     }
     .card {
         display:flex;
