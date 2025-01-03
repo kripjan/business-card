@@ -195,7 +195,6 @@ body {
   align-self: center;
   font-weight: bold;
   transition: transform 0.3s;
-
   cursor: pointer;
 }
 
@@ -239,8 +238,75 @@ button i{
     height: auto;
 }
 
+@media (min-width: 965px) and (max-width: 1200px)
+{
+    .all {
+        padding-left: 15px;
+        padding-bottom:27px;
+        font-family: Baskervville, sans-serif;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-decoration: none;
+    }
+    
+    .a, .b, .c, .d {
+        margin-top: 10px;
+    }
+    
+    .a p, .b p, .c p, .d p {
+        margin: 0;
+    }
+    
+    .namee {
+        font-size: 22px;
+        font-weight: bold;
+        color: #1A3559;
+    }
+    
+    .post {
+        font-size: 15px;
+        font-weight: bold;
+        color: #1A3559;
+        padding-bottom: 2px;
+    }
 
-@media (max-width: 860px) {
+    .info p {
+        font-size: 22px;
+        color: #1A3559;
+        margin: 8px 0;
+        /* border: 5px solid gold; */
+    
+    }
+    .info i {
+        font-size: 25px;
+        margin-right: 10px;
+        color: #1A3559;
+        /* border: 5px solid #1283ac; */
+        
+    }
+    
+    .info .link i {
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    .QR-img {
+        margin-bottom: 20px;
+        width:280px;
+    }
+
+    .bottomright{
+        margin-top: -35px;
+    }
+
+    .logo {
+        margin-top:-40px;
+        width: 400px;
+    }
+
+}
+@media (max-width: 965px) {
     body {
         overflow: hidden;
         margin-top:-40px;
@@ -309,4 +375,34 @@ button i{
         right: 45%;
         bottom: 5%;
     }    
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        position: absolute;
+        right: 50%;
+        bottom: 5%;
+    }
+
+    .container .buttons button {
+        font-size: 1.8rem;
+        padding-top: 0.1rem;
+        transform: scale(1); 
+    }
+
+    .container .buttons button:hover {
+        transform: scale(1.1); 
+    }
+
+    .container .dots li {
+        width: 0.6rem; 
+        height: 0.6rem;
+        margin: 0.2rem;
+    }
+
+    .container .dots li.active {
+        width: 2rem; 
+    }
 }
