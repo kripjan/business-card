@@ -230,21 +230,72 @@ body {
 }
 
 
-@media (max-width: 860px) {
-    body {
-        overflow: hidden;
-        margin-top:-30px;
+@media (min-width: 965px) and (max-width: 1200px)
+ {
+    .QR-img {
+        margin-bottom: 20px;
+        width:320px;
     }
 
+    
+    .title h2 {
+        font-size: 38px;
+        margin: 0;
+        color: #1A3559;
+        font-weight: 600;
+        text-align: right;
+        /* border: 5px solid #d624bb; */
+        text-wrap:nowrap;
+    }
+
+    .title p {
+        font-size: 35px;
+        color: #1A3559;
+        margin-top: 5px;
+        text-align: right;
+        /* border: 5px solid #1c2855; */
+}
+.info p {
+    font-size: 22px;
+    color: #1A3559;
+    margin: 8px 0;
+    /* border: 5px solid gold; */
+
+}
+.info i {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #1A3559;
+    /* border: 5px solid #1283ac; */
+    
+}
+
+.info .link i {
+    font-size: 15px;
+    margin-right: 15px;
+}
+  }
+  
+@media (max-width: 965px) {
+    
+    .nbsp {
+        display: none;
+    }
+    
+    body {
+        overflow: hidden;
+        padding: 0;
+        /* margin-top:-30px; */
+    }
     .card {
+        display:flex;
         flex-direction: column;
         min-height: auto;
         width: 100%;
-        padding: 10px;
+        padding: px;
         margin: 0;
         margin-left: -30px;
     }
-
     .left, .right {
         flex: 1;
         width: 100%;
@@ -260,6 +311,11 @@ body {
 
     .QR-img {
         margin-top: -30px;
+    }
+
+    .logotwo{
+        
+        width: 90dvw;
     }
 
     .title h2 {
@@ -313,4 +369,23 @@ body {
         bottom: 5%;
     }
 
+    .container .buttons button {
+        font-size: 1.8rem;
+        padding-top: 0.1rem;
+        transform: scale(1); 
+    }
+
+    .container .buttons button:hover {
+        transform: scale(1.1); 
+    }
+
+    .container .dots li {
+        width: 0.6rem; 
+        height: 0.6rem;
+        margin: 0.2rem;
+    }
+
+    .container .dots li.active {
+        width: 2rem; 
+    }
 }
