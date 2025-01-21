@@ -47,7 +47,7 @@
 
 .card {
     margin: 0;
-    padding: 20px;
+    padding: 2dvh;
     display: flex;
     justify-content: space-evenly;
     min-height: 90dvh;
@@ -64,11 +64,11 @@
 
 .logo-img {
     height: 30dvh;
-    margin-bottom: 20px;
+    margin-bottom: 2dvh;
 }
 
 .QR-img {
-    margin-bottom: 20px;
+    margin-bottom: 2dvh;
     height: 43dvh;
 }
 
@@ -81,11 +81,11 @@
 
 .title {
     font-family: 'Baskervville', sans-serif;
-    padding-right: 20px;
+    padding-right: 2dvh;
 }
 
 .title h2 {
-    font-size: 4dvw; /* Responsive font size */
+    font-size: 6dvh; /* Responsive font size */
     margin: 0;
     color: #1A3559;
     font-weight: 600;
@@ -94,25 +94,25 @@
 }
 
 .title p {
-    font-size: 2.5dvw; /* Adjusted to scale with viewport width */
+    font-size: 3.7dvh; /* Adjusted to scale with viewport width */
     color: #1A3559;
-    margin-top: 5px;
+    margin-top: 0.5dvh;
     text-align: right;
 }
 
 .bottomright {
-    margin-top: 20px;
-    padding-top: 15px;
+    margin-top: 2dvh;
+    padding-top: 2dvh;
 }
 
 .info p {
-    font-size: 2dvw; /* Scales with viewport width */
+    font-size: 3.7dvh; /* Scales with viewport width */
     color: #1A3559;
-    margin: 8px 0;
+    margin: 0.8dvh 0;
 }
 
 .info .factory {
-    padding-left: 40px;
+    padding-left: 4.7dvh;
 }
 
 .info a {
@@ -124,18 +124,18 @@
 }
 
 .info i {
-    font-size: 2dvw; /* Adjusted to scale responsively */
-    margin-right: 10px;
+    font-size: 3.7dvh;
+    margin-right: 1dvh;
     color: #1A3559;
 }
 
 .info .link i {
-    font-size: 2dvw;
-    margin-right: 15px;
+    font-size: 3.7dvh;
+    margin-right: 1dvh;
 }
 
 .bottomright {
-    margin-top: 60px;
+    margin-top: 6dvh;
 }
 
 .button {
@@ -175,8 +175,8 @@
 .container .buttons button {
     background-color: var(--container-button-color);
     border: none;
-    font-size: 3dvw; /* Scales with viewport */
-    padding-top: 0.15rem;
+    font-size: 3dvh; /* Scales with viewport */
+    padding-top: 0.2dvh;
     height: fit-content;
     align-self: center;
     font-weight: bold;
@@ -199,15 +199,18 @@ button i {
 
 .container .dots li {
     list-style: none;
-    width: 0.9rem;
-    height: 0.9rem;
-    margin: 0.4rem;
-    border-radius: 0.9rem;
+    width: 2dvh;
+    height: 2dvh;
+    margin: 1dvh;
+    border-radius: 2dvh;
     transition: 0.5s;
 }
 
 .container .dots li.active {
-    width: 3rem;
+    width: 5dvh;
+}
+#prev i, #next i {
+    font-size: 5dvh;
 }
 
   :root {
@@ -220,12 +223,12 @@ button i {
 
 
 .logotwo{
-    width: 50dvw;
+    width: 90dvh;
     height: auto;
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
     
     .nbsp {
         display: none;
@@ -241,7 +244,6 @@ button i {
         flex-direction: column;
         min-height: auto;
         width: 100%;
-        padding: px;
         margin: 0;
         margin-left: -30px;
     }
@@ -255,8 +257,8 @@ button i {
     }
 
     .logo-img, .QR-img {
-        width: 40dvw;
-        max-width: 150px;
+        width: 40dvh;
+        
     }
 
     .QR-img {
@@ -264,7 +266,6 @@ button i {
     }
 
     .logotwo{
-        
         width: 90dvw;
     }
 
